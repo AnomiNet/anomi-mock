@@ -8,11 +8,23 @@ helpers do
   end
 
   def require_params(required_params)
+    if request_body.nil?
+      return { error: "Post body is not valid JSON" }
+    end
+
     missing_attrs = required_params - request_body.keys
     if missing_attrs.any?
       { error: "Required params missing: #{ missing_attrs.join(', ') }" }
     else
       {}
+    end
+  end
+
+  def require_auth_header
+    if env['HTTP_X_USER_TOKEN']
+      {}
+    else
+      { error: "HTTP header X-User-Token is required" }
     end
   end
 
@@ -41,6 +53,9 @@ end
 # Post #create
 post '/posts/' do
   content_type :json
+
+  errors = require_auth_header
+  status 401 and return( as_json(errors) ) if errors.any?
 
   errors = require_params( %w(body tldr) )
   status 400 and return( as_json(errors) ) if errors.any?
