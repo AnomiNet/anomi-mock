@@ -1,0 +1,44 @@
+[
+  {
+    "id": 42,
+    "created_at": 1436057882,
+    "user_handle": "alice",
+    "user_id": 1,
+    "parent_id": null,
+    "root_id": 42,
+    "url": "https://troll.io/",
+    "body": "I like turtles",
+    "depth": 0,
+    "tldr": "yee",
+    "child_ids": [43],
+    "score": 123
+  },
+  {
+    "id": 43,
+    "created_at": 1436057892,
+    "user_handle": "alice",
+    "user_id": 1,
+    "parent_id": 42,
+    "root_id": 42,
+    "url": null,
+    "body": "paaaaaaaaaaaa",
+    "tldr": "paa",
+    "depth": 1,
+    "child_ids": [44],
+    "score": 5
+  },
+  {
+    "id": 44,
+    "created_at": 1436057992,
+    "user_handle": "poopy",
+    "user_id": 3,
+    "parent_id": 43,
+    "root_id": 42,
+    "url": null,
+    "body": "Bla bla bla disagee troll whatever you suck banana phallus.",
+    "tldr": "troll",
+    "depth": 1,
+    "child_ids": [],
+    "score": -5
+  }
+]

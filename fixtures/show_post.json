@@ -4,10 +4,11 @@
   "user_handle": "alice",
   "user_id": 1,
   "parent_id": null,
-  "root_id": null,
+  "root_id": 42,
   "url": "https://troll.io/",
   "body": "I like turtles",
-  "tldr": "yee",
   "depth": 0,
-  "child_ids": [43]
+  "tldr": "yee",
+  "child_ids": [43],
+  "score": 123
 }

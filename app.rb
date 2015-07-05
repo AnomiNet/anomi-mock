@@ -78,10 +78,17 @@ get '/posts/:id' do
 end
 
 
-# Post #index
 get '/posts' do
   content_type :json
 
   status 200
-  File.read("fixtures/posts.json")
+
+  # Post "Thread Detail" view
+  if params['context_id']
+    File.read("fixtures/posts_by_context.json")
+
+  # Top Posts
+  else
+    File.read("fixtures/posts_top.json")
+  end
 end
