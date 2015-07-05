@@ -1,0 +1,13 @@
+{
+  "id": 43,
+  "created_at": 1436057882,
+  "user_handle": "alice",
+  "user_id": 1,
+  "parent_id": 42,
+  "root_id": 42,
+  "url": null,
+  "body": "paaaaaaaaaaaa",
+  "tldr": "paa",
+  "depth": 1,
+  "child_ids": []
+}

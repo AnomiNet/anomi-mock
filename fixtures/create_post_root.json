@@ -1,0 +1,13 @@
+{
+  "id": 42,
+  "created_at": 1436057882,
+  "user_handle": "alice",
+  "user_id": 1,
+  "parent_id": null,
+  "root_id": null,
+  "url": "https://troll.io/",
+  "body": "I like turtles",
+  "tldr": "yee",
+  "depth": 0,
+  "child_ids": []
+}
