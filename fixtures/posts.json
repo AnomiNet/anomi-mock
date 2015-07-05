@@ -5,24 +5,40 @@
     "user_handle": "alice",
     "user_id": 1,
     "parent_id": null,
-    "root_id": null,
+    "root_id": 42,
     "url": "https://troll.io/",
     "body": "I like turtles",
     "depth": 0,
     "tldr": "yee",
-    "child_ids": [43]
+    "child_ids": [43],
+    "score": 123
   },
   {
-    "id": 43,
-    "created_at": 1436057892,
-    "user_handle": "alice",
-    "user_id": 1,
-    "parent_id": 42,
-    "root_id": 42,
+    "id": 45,
+    "created_at": 1436058882,
+    "user_handle": "ev",
+    "user_id": 2,
+    "parent_id": null,
+    "root_id": 45,
+    "url": "http://www.bassnectar.net/",
+    "body": "new album it's legit",
+    "depth": 0,
+    "tldr": "Bassnectar new album",
+    "child_ids": null,
+    "score": 90
+  },
+  {
+    "id": 45,
+    "created_at": 1436058882,
+    "user_handle": "poopy",
+    "user_id": 3,
+    "parent_id": null,
+    "root_id": 45,
     "url": null,
-    "body": "paaaaaaaaaaaa",
-    "tldr": "paa",
-    "depth": 1,
-    "child_ids": []
+    "body": "I'm a little teapot",
+    "depth": 0,
+      "tldr": "upvoat pls",
+    "child_ids": null,
+    "score": 0
   }
 ]
