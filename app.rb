@@ -52,3 +52,12 @@ post '/posts/' do
     File.read("fixtures/create_post_root.json")
   end
 end
+
+
+# Post #show
+get '/posts/:id' do
+  content_type :json
+
+  status 200
+  File.read("fixtures/show_post.json")
+end
