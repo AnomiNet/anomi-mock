@@ -39,7 +39,7 @@ end
 
 
 # User #create
-post '/users/' do
+post '/users' do
   content_type :json
 
   errors = require_params( %w(handle) )
@@ -51,7 +51,7 @@ end
 
 
 # Post #create
-post '/posts/' do
+post '/posts' do
   content_type :json
 
   errors = require_auth_header
@@ -79,7 +79,7 @@ end
 
 
 # Post #index
-get '/posts/' do
+get '/posts' do
   content_type :json
 
   status 200
