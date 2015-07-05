@@ -18,7 +18,7 @@ post '/users/' do
   content_type :json
 
   if request_body['handle'].empty?
-    status 403
+    status 400
     return { error: '"handle" param is required' }
   end
 
