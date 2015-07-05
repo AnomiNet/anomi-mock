@@ -61,3 +61,12 @@ get '/posts/:id' do
   status 200
   File.read("fixtures/show_post.json")
 end
+
+
+# Post #index
+get '/posts/' do
+  content_type :json
+
+  status 200
+  File.read("fixtures/posts.json")
+end
