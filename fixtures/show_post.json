@@ -3,12 +3,13 @@
   "created_at": 1436057882,
   "user_handle": "alice",
   "user_id": 1,
+  "current_user_vote": 0,
+  "score": 123,
+  "depth": 0,
   "parent_id": null,
+  "direct_child_ids": [],
   "root_id": 42,
   "url": "https://troll.io/",
   "body": "I like turtles",
-  "depth": 0,
-  "tldr": "yee",
-  "child_ids": [43],
-  "score": 123
+  "tldr": "yee"
 }

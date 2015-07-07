@@ -56,8 +56,7 @@ post '/posts' do
 
   errors = require_auth_header
   status 401 and return( as_json(errors) ) if errors.any?
-
-  errors = require_params( %w(body tldr) )
+  errors = require_params( %w(tldr) )
   status 400 and return( as_json(errors) ) if errors.any?
 
   status 201
@@ -78,17 +77,38 @@ get '/posts/:id' do
 end
 
 
+# Post context
+get '/posts/:id/context' do
+  content_type :json
+
+  status 200
+  File.read("fixtures/posts_by_context.json")
+end
+
+
+# Post top
 get '/posts' do
   content_type :json
 
   status 200
+  File.read("fixtures/posts_top.json")
+end
 
-  # Post "Thread Detail" view
-  if params['context_id']
-    File.read("fixtures/posts_by_context.json")
 
-  # Top Posts
+# Vote on a post
+# Unvote if vector == 0
+post '/votes' do
+  content_type :json
+
+  errors = require_auth_header
+  status 401 and return( as_json(errors) ) if errors.any?
+  errors = require_params( %w(post_id vector) )
+  status 400 and return( as_json(errors) ) if errors.any?
+
+  status 200
+  if request_body['vector'] == 0
+    File.read("fixtures/delete_vote.json")
   else
-    File.read("fixtures/posts_top.json")
+    File.read("fixtures/create_vote.json")
   end
 end
