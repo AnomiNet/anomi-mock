@@ -8,7 +8,7 @@
     "score": 123,
     "depth": 0,
     "root_id": 42,
-    "parent_id": null,
+    "parent_id": 0,
     "direct_child_ids": [43],
     "url": "https://troll.io/",
     "body": "I like turtles",
@@ -23,8 +23,8 @@
     "score": 90,
     "depth": 0,
     "root_id": 45,
-    "parent_id": null,
-    "direct_child_ids": null,
+    "parent_id": 0,
+    "direct_child_ids": [],
     "url": "http://www.bassnectar.net/",
     "body": "new album it's legit",
     "tldr": "Bassnectar new album"
@@ -38,9 +38,9 @@
     "score": -1,
     "depth": 0,
     "root_id": 45,
-    "parent_id": null,
-    "direct_child_ids": null,
-    "url": null,
+    "parent_id": 0,
+    "direct_child_ids": [],
+    "url": "",
     "body": "I'm a little teapot",
     "tldr": "upvoat pls"
   }

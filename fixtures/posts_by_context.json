@@ -8,7 +8,7 @@
     "score": 123,
     "depth": 0,
     "root_id": 42,
-    "parent_id": null,
+    "parent_id": 0,
     "direct_child_ids": [43],
     "url": "https://troll.io/",
     "body": "I like turtles",
@@ -25,7 +25,7 @@
     "root_id": 42,
     "parent_id": 42,
     "direct_child_ids": [44],
-    "url": null,
+    "url": "",
     "body": "paaaaaaaaaaaa",
     "tldr": "paa"
   },
@@ -40,7 +40,7 @@
     "root_id": 42,
     "parent_id": 43,
     "direct_child_ids": [],
-    "url": null,
+    "url": "",
     "body": "Bla bla bla disagee troll whatever you suck banana phallus.",
     "tldr": "troll"
   }
